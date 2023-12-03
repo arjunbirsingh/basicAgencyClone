@@ -1,0 +1,177 @@
+@font-face {
+  font-family: scto;
+  src: url(assets/SctoGroteskA-Bold.d6497298.woff2);
+}
+* {
+  margin: 0;
+  font-family: scto, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+.cont1 {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+.cont1 header {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 1.2rem;
+}
+.cont1 header svg {
+  width: 135px;
+  height: 18px;
+}
+.cont1 .videoCont {
+  position: relative;
+}
+.cont1 video {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+  object-position: center center;
+}
+.cont1 .circleOnVid {
+  z-index: 1;
+  pointer-events: none;
+  transition: all 1s;
+  /* transition: scale 1.5s; */
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  letter-spacing: -0.07rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  color: black;
+}
+#white {
+  color: white;
+}
+.cont1 .circleOnVid .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+.cont2 {
+  padding-inline: 1rem;
+}
+.cont2 .logoPart {
+  padding-block: 4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 100;
+  border-bottom: 1px solid black;
+}
+.cont2 #svg1,
+.cont2 #svg3 {
+  margin-top: 1rem;
+}
+.cont2 .logoPart svg {
+  width: clamp(10px, 20vw, 150px);
+}
+.cont2 .logoAndPtag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.cont2 .svgCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont2 .textPart {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.cont2 .left {
+  font-size: 20px;
+  font-weight: 100;
+}
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  margin-block: 2rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+button p:hover {
+  z-index: 111;
+  color: white;
+}
+button:hover::after {
+  top: 0;
+}
+button::after {
+  transition: all 0.3s;
+  content: "SEE THE WORK";
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background-color: black;
+}
+.cont2 .right {
+  display: flex;
+  justify-content: right;
+}
+.cont2 .right svg {
+  width: 40vw;
+}
+.cont3 {
+  padding: 2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.cont3 video {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.cont3 h2 {
+  margin-block: 2.5rem;
+  font-size: 40px;
+  letter-spacing: -3px;
+  line-height: 40px;
+}
+.cont3 button {
+  margin-top: 1rem;
+}
+.cont3 button::after {
+  content: "ABOUT US";
+}
